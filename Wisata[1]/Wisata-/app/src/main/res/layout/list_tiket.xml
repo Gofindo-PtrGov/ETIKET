@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    
+    <RelativeLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/back2">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ticket_png" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toEndOf="@id/image"
+            android:layout_marginTop="20dp"
+            android:textSize="11dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="Hapuna Beach" />
+
+        <TextView
+            android:id="@+id/ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000"
+            android:layout_toEndOf="@id/image"
+            android:textSize="9dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/nama"
+            android:text="Jl. Lorem Ipsum Dolor Sit Amet Bandung No. 123" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            style="@style/ButtonWhiteOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:paddingHorizontal="0dp"
+            android:text="Kelola Produk"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:icon="@drawable/pencilsimpleline"
+            app:iconGravity="textStart"
+            app:iconTint="#03A9F4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/image"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="62dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:text="Ramdanil" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="60dp"
+            android:text="Qty : 2" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

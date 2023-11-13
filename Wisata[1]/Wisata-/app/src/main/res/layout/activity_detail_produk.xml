@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:cardBackgroundColor="@color/thema2"
+        app:cardCornerRadius="50dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
+            android:src="@drawable/arrow_left"
+            app:tint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:cardBackgroundColor="@color/thema1"
+        app:cardCornerRadius="50dp"
+        android:visibility="invisible"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
+            android:src="@drawable/baseline_delete_outline_24"
+            app:tint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnfav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/fav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
+            android:src="@drawable/img_15" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satoshi_medium"
+        android:padding="18dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:text="Aloevera" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satoshi_black"
+        android:paddingHorizontal="18dp"
+        android:textSize="18sp"
+        android:textColor="@color/thema1"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintStart_toStartOf="@id/btnBuy"
+        app:layout_constraintBottom_toBottomOf="@id/btnBuy"
+        tools:text="Rp15.000" />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="18dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="95dp"
+        android:textColor="#9DA1A0"
+        android:fontFamily="@font/lato"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@id/btnBuy"
+        app:layout_constraintBottom_toBottomOf="@id/btnBuy"
+        tools:text="PRICE" />
+    <TextView
+        android:id="@+id/txtx1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satoshi_black"
+        android:paddingHorizontal="18dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="65dp"
+        android:textColor="#9DA1A0"
+        android:layout_marginLeft="-26dp"
+        app:layout_constraintStart_toEndOf="@id/tvPrice"
+        app:layout_constraintBottom_toBottomOf="@id/btnBuy"
+        tools:text="/Orang" />
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/gray"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvPrice" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/satoshi_medium"
+        android:paddingHorizontal="18dp"
+        android:text="Deskripsi"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satoshi_regular"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="-20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        tools:text="Desc" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuy"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_margin="12dp"
+        android:paddingHorizontal="0dp"
+        android:text="Book Now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtxt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="95dp"
+        android:fontFamily="@font/lato"
+        android:paddingHorizontal="18dp"
+        android:textColor="#9DA1A0"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/btnBuy"
+        app:layout_constraintEnd_toEndOf="@id/btnBuy"
+        tools:text="Rating" />
+
+
+    <TextView
+        android:id="@+id/txtxt3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satoshi_black"
+        android:paddingHorizontal="18dp"
+        android:textSize="18sp"
+        android:textColor="@color/thema1"
+        android:layout_marginRight="-35dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintEnd_toStartOf="@id/txtx2"
+        app:layout_constraintBottom_toBottomOf="@id/btnBuy"
+        tools:text="8.9" />
+
+    <TextView
+        android:id="@+id/txtx2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satoshi_black"
+        android:paddingHorizontal="18dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="65dp"
+        android:textColor="#9DA1A0"
+        app:layout_constraintEnd_toEndOf="@id/btnBuy"
+        app:layout_constraintBottom_toBottomOf="@id/btnBuy"
+        tools:text="/10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

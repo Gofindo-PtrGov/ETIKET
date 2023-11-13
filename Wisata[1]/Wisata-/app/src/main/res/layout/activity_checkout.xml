@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".Checkout">
+
+
+    <RelativeLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/back2">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="90dp"
+            android:scaleType="centerCrop"
+            android:layout_height="90dp"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/img_7" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_toEndOf="@id/image"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:text="Hapuna Beach" />
+
+        <TextView
+            android:id="@+id/ket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000"
+            android:layout_toEndOf="@id/image"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/nama"
+            android:lines="2"
+            android:text="Jl. Lorem Ipsum Dolor Sit Amet Bandung No. 123" />
+        <TextView
+            android:id="@+id/radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textColor="#B6B0B0"
+            android:layout_toEndOf="@id/image"
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/ket"
+            android:text="4.1 m" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEdit"
+            style="@style/ButtonWhiteOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:paddingHorizontal="0dp"
+            android:text="Kelola Produk"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:icon="@drawable/pencilsimpleline"
+            app:iconGravity="textStart"
+            app:iconTint="#03A9F4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/image"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/img_16" />
+
+    <RelativeLayout
+        android:id="@+id/datetime"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/back2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-30dp"
+        android:layout_below="@id/imageView8">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true">
+
+
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:background="@drawable/backform2"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:text="12 januari 2023"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/thema1"/>
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:background="@drawable/backform2"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"
+                android:text="08.00 Wib"
+                android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@id/date"
+                android:textColor="@color/thema1"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/qty1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/back2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/datetime">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true">
+
+
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+                android:text="Total Guest"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:layout_marginRight="20dp"
+                android:textColor="#000"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/kurang"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:src="@drawable/img_17"
+                    android:paddingLeft="5dp"
+                    android:text="08.00 Wib"
+                    android:paddingRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/thema1"/>
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins"/>
+
+                <ImageView
+                    android:id="@+id/tambah"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:src="@drawable/img_18"
+                    android:paddingLeft="5dp"
+                    android:text="08.00 Wib"
+                    android:paddingRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/thema1"/>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qty1"
+        android:background="@drawable/back2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="20dp">
+
+
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"
+            android:layout_marginLeft="25dp"
+            android:text="Payment Summary"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="11dp"
+            android:layout_marginLeft="25dp"
+            android:text="Price"
+            android:paddingRight="5dp"
+            android:layout_below="@id/text2"
+            android:fontFamily="@font/poppins"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="11dp"
+            android:layout_marginLeft="25dp"
+            android:text="Rp150.000"
+            android:paddingRight="5dp"
+            android:layout_alignParentRight="true"
+            android:textAlignment="textEnd"
+            android:layout_below="@id/text2"
+            android:fontFamily="@font/poppins"
+            android:layout_marginRight="20dp"
+            android:textColor="#BABABA"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="11dp"
+            android:layout_marginLeft="25dp"
+            android:text="Total Payment"
+            android:paddingRight="5dp"
+            android:layout_below="@id/text3"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/total2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="11dp"
+            android:layout_marginLeft="25dp"
+            android:text="Rp150.000"
+            android:paddingRight="5dp"
+            android:layout_below="@id/text3"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/poppins"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/thema1"/>
+
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn1"
+        android:layout_margin="30dp"
+        android:textColor="#fff"
+        android:paddingHorizontal="0dp"
+        android:layout_alignParentBottom="true"
+        android:text="Buy Ticket" />
+
+
+</RelativeLayout>
